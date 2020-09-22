@@ -33,7 +33,7 @@ a {
     float: left;
     width: 12%;
     height: auto;
-    min-height: 2100px;
+    min-height: 3000px;
     /* only for demonstration, should be removed */
     background: #00007C;
     padding: 20px;
@@ -42,7 +42,7 @@ right {
     float: right;
     width: 12%;
     height: auto;
-    min-height: 2100px;
+    min-height: 3000px;
     /* only for demonstration, should be removed */
     background: #00007C;
     padding: 20px;
@@ -57,7 +57,7 @@ article {
     padding: 20px;
     width: 76%;
     background-color: #375FA0;
-    min-height: 2100px;
+    min-height: 3000px;
     /* only for demonstration, should be removed */
 }
 .mainl {
@@ -773,4 +773,12 @@ a.box {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+  .log-box {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #0088a9;
+    color: white;
+    padding: 5px;
+    border-radius: 7px;
   }
