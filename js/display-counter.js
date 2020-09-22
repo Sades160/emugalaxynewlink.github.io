@@ -12,6 +12,7 @@ function displayVisitCount3dbwr() {
 	})
 };
 
+
 const count8eyesnes = document.getElementById('8eyes-display');
 
 displayVisitCount8EYESNES();
@@ -615,6 +616,30 @@ function displayVisitCountforFIFA() {
 	})
 };
 
+const countKIRBSS = document.getElementById('kirbss-display');
+
+displayVisitCountforKIRBSS();
+
+function displayVisitCountforKIRBSS() {
+	fetch('https://api.countapi.xyz/get/kirbss/emugalaxy/')
+	.then(res => res.json())
+	.then(res => {
+		countKIRBSS.innerHTML = res.value;
+	})
+};
+
+const countKIRBDC = document.getElementById('kirbdc-display');
+
+displayVisitCountforKIRBDC();
+
+function displayVisitCountforKIRBDC() {
+	fetch('https://api.countapi.xyz/get/kirbdc/emugalaxy/')
+	.then(res => res.json())
+	.then(res => {
+		countKIRBDC.innerHTML = res.value;
+	})
+};
+
 const countNBAJAMTE = document.getElementById('nbajamte-display');
 
 displayVisitCountforNBAJAMTE();
@@ -687,6 +712,18 @@ function displayVisitCountforSMK() {
 	})
 };
 
+const countSMO = document.getElementById('smohack-display');
+
+displayVisitCountforSMO();
+
+function displayVisitCountforSMO() {
+	fetch('https://api.countapi.xyz/get/smohack/emugalaxy/')
+	.then(res => res.json())
+	.then(res => {
+		countSMO.innerHTML = res.value;
+	})
+};
+
 const countSMW = document.getElementById('smw-display');
 
 displayVisitCountforSMW();
@@ -708,6 +745,18 @@ function displayVisitCountforSSBKH() {
 	.then(res => res.json())
 	.then(res => {
 		countSSBKH.innerHTML = res.value;
+	})
+};
+
+const countTMNT4 = document.getElementById('tmnt4-display');
+
+displayVisitCountforTMNT4();
+
+function displayVisitCountforTMNT4() {
+	fetch('https://api.countapi.xyz/get/tmnt4/emugalaxy/')
+	.then(res => res.json())
+	.then(res => {
+		countTMNT4.innerHTML = res.value;
 	})
 };
 
@@ -734,7 +783,9 @@ function displayVisitCountforTETRISAT() {
 		countTETRISAT.innerHTML = res.value;
 	})
 };
+
 // SEGA Games
+
 const countaladding = document.getElementById('aladding-display');
 
 displayVisitCountaladding();
@@ -1024,6 +1075,7 @@ function displayVisitCountstreetrage2g() {
 };
 
 // N64 Games
+
 const countge007 = document.getElementById('ge007-display');
 
 displayVisitCountforGE007();
@@ -1575,5 +1627,55 @@ function displayVisitCountZELDATMC() {
 	.then(res => res.json())
 	.then(res => {
 		countzeldatmc.innerHTML = res.value;
+	})
+};
+
+//NDS Games
+
+const countacwwds = document.getElementById('acwwds-display');
+
+displayVisitCountacwwds();
+
+function displayVisitCountacwwds() {
+	fetch('https://api.countapi.xyz/get/acwwds/emugalaxy')
+	.then(res => res.json())
+	.then(res => {
+		countacwwds.innerHTML = res.value;
+	})
+};
+
+const countkirbma = document.getElementById('kirbma-display');
+
+displayVisitCountkirbma();
+
+function displayVisitCountkirbma() {
+	fetch('https://api.countapi.xyz/get/kirbma/emugalaxy')
+	.then(res => res.json())
+	.then(res => {
+		countkirbma.innerHTML = res.value;
+	})
+};
+
+const countmkds = document.getElementById('mkds-display');
+
+displayVisitCountmkds();
+
+function displayVisitCountmkds() {
+	fetch('https://api.countapi.xyz/get/mkds/emugalaxy')
+	.then(res => res.json())
+	.then(res => {
+		countmkds.innerHTML = res.value;
+	})
+};
+
+const countsm64ds = document.getElementById('sm64ds-display');
+
+displayVisitCountsm64ds();
+
+function displayVisitCountsm64ds() {
+	fetch('https://api.countapi.xyz/get/sm64ds/emugalaxy')
+	.then(res => res.json())
+	.then(res => {
+		countsm64ds.innerHTML = res.value;
 	})
 };

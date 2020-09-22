@@ -78,6 +78,11 @@ $(document).ready(function() {
             "url": "genesis/108-aladdin.html",
             "sys": "SEGA"
         }, {
+            "name": "Animal Crossing - Wild World",
+            "image": "nds/acwwds.png",
+            "url": "nes/137-animal-crossing-wild-world.html",
+            "sys": "NDS"
+        }, {
             "name": "Anticipation",
             "image": "nes/Anticipation.png",
             "url": "nes/44-anticipation.html",
@@ -288,7 +293,7 @@ $(document).ready(function() {
             "url": "nes/55-jackal.html",
             "sys": "NES"
         }, {
-            "name": "Kirby's Adventure",
+            "name": "Kirbys Adventure",
             "image": "nes/kirby.png",
             "url": "nes/6-kirbys-adventure.html",
             "sys": "NES"
@@ -297,6 +302,21 @@ $(document).ready(function() {
             "image": "gba/kirby-mirror.png",
             "url": "gba/94-kirby-and-the-amazing-mirror.html",
             "sys": "GBA"
+        }, {
+            "name": "Kirbys Dream Course",
+            "image": "nes/kirby.png",
+            "url": "snes/133-kirbys-dream-course.html",
+            "sys": "SNES"
+        }, {
+            "name": "Kirbys Mass Attack",
+            "image": "nds/kirbyma.png",
+            "url": "nes/139-kirby-mass-attack.html",
+            "sys": "NDS"
+        }, {
+            "name": "Kirby Super Star",
+            "image": "nes/kirby.png",
+            "url": "nes/132-kirby-super-star.html",
+            "sys": "SNES"
         }, {
             "name": "Kung Fu",
             "image": "nes/kungfu.png",
@@ -337,6 +357,11 @@ $(document).ready(function() {
             "image": "n64/mk64.png",
             "url": "n64/31-mario-kart-64.html",
             "sys": "N64"
+        }, {
+            "name": "Mario Kart DS",
+            "image": "nds/mkds.png",
+            "url": "nds/138-mario-kart-ds.html",
+            "sys": "NDS"
         }, {
             "name": "Mario Tennis",
             "image": "n64/mt.png",
@@ -553,6 +578,11 @@ $(document).ready(function() {
             "url": "n64/28-super-mario-64.html",
             "sys": "N64"
         }, {
+            "name": "Super Mario 64 DS",
+            "image": "nds/sm64ds.png",
+            "url": "nds/136-super-mario-64-ds.html",
+            "sys": "NDS"
+        }, {
             "name": "Super Mario Advance",
             "image": "gba/mario-advance.png",
             "url": "gba/68-super-mario-advance.html",
@@ -618,6 +648,11 @@ $(document).ready(function() {
             "url": "snes/23-super-spongebob-kart-hack.html",
             "sys": "SNES"
         }, {
+            "name": "Teenage Mutant Ninja Turtles IV - Turtles in Time",
+            "image": "snes/tetris2.png",
+            "url": "snes/134-tmnt-4-turtles-in-time.html",
+            "sys": "SNES"
+        },{
             "name": "Tetris 2",
             "image": "snes/tetris2.png",
             "url": "snes/16-tetris-2.html",
@@ -660,7 +695,7 @@ $(document).ready(function() {
         }];
         $.each(game_data, function(key, value) {
             if (value.name.search(expression) != -1) {
-                $('#result').append('<li><a href="https://emugalaxy.dev/' + value.url + '" class="list-group-item"><img src="https://cdn.jsdelivr.net/gh/emugalaxy-storage1/emugalaxy-storage1.github.io/thumbs/'+ value.image +'" data-loaded="true" style="width:40%;"><div class="list-group-text"> ' + value.name + '</div><span class="emu-sys">' + value.sys + '</span></a></li>');
+                $('#result').append('<li><a href="http://emugalaxy.herokuapp.com/' + value.url + '" class="list-group-item"><img src="https://cdn.jsdelivr.net/gh/emugalaxy-storage1/emugalaxy-storage1.github.io/thumbs/'+ value.image +'" data-loaded="true" style="width:40%;"><div class="list-group-text"> ' + value.name + '</div><span class="emu-sys">' + value.sys + '</span></a></li>');
             }
         });
     });
