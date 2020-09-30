@@ -1002,15 +1002,39 @@ function displayVisitCountsonickg() {
 	})
 };
 
+const countsonicle = document.getElementById('sonicle-display');
+
+displayVisitCountsonicle();
+
+function displayVisitCountsonicle() {
+	fetch('https://api.countapi.xyz/get/sonicle/emugalaxy')
+	.then(res => res.json())
+	.then(res => {
+		countsonicle.innerHTML = res.value;
+	})
+};
+
 const countsonicmmhg = document.getElementById('sonicmmhg-display');
 
 displayVisitCountsonicmmhg();
 
 function displayVisitCountsonicmmhg() {
-	fetch('https://api.countapi.xyz/get/sonicmmhg/emugalaxy')
+	fetch('https://api.countapi.xyz/get/sonicle/emugalaxy')
 	.then(res => res.json())
 	.then(res => {
 		countsonicmmhg.innerHTML = res.value;
+	})
+};
+
+const countsonicch = document.getElementById('sonicch-display');
+
+displayVisitCountsonicch();
+
+function displayVisitCountsonicch() {
+	fetch('https://api.countapi.xyz/get/sonicch/emugalaxy')
+	.then(res => res.json())
+	.then(res => {
+		countsonicch.innerHTML = res.value;
 	})
 };
 
@@ -1196,6 +1220,18 @@ function displayVisitCountforMK64() {
 	})
 };
 
+const countmk4 = document.getElementById('mk4-display');
+
+displayVisitCountformk4();
+
+function displayVisitCountformk4() {
+	fetch('https://api.countapi.xyz/get/mk4/emugalaxy/')
+	.then(res => res.json())
+	.then(res => {
+		countmk4.innerHTML = res.value;
+	})
+};
+
 const countmt = document.getElementById('mt-display');
 
 displayVisitCountforMT();
@@ -1205,6 +1241,18 @@ function displayVisitCountforMT() {
 	.then(res => res.json())
 	.then(res => {
 		countmt.innerHTML = res.value;
+	})
+};
+
+const countray2 = document.getElementById('ray2-display');
+
+displayVisitCountforray2();
+
+function displayVisitCountforray2() {
+	fetch('https://api.countapi.xyz/get/ray2/emugalaxy/')
+	.then(res => res.json())
+	.then(res => {
+		countray2.innerHTML = res.value;
 	})
 };
 
@@ -1665,6 +1713,42 @@ function displayVisitCountmkds() {
 	.then(res => res.json())
 	.then(res => {
 		countmkds.innerHTML = res.value;
+	})
+};
+
+const countnsmb = document.getElementById('nsmb-display');
+
+displayVisitCountnsmb();
+
+function displayVisitCountnsmb() {
+	fetch('https://api.countapi.xyz/get/nsmb/emugalaxy')
+	.then(res => res.json())
+	.then(res => {
+		countnsmb.innerHTML = res.value;
+	})
+};
+
+const countpokedia = document.getElementById('pokedia-display');
+
+displayVisitCountpokedia();
+
+function displayVisitCountpokedia() {
+	fetch('https://api.countapi.xyz/get/pokedia/emugalaxy')
+	.then(res => res.json())
+	.then(res => {
+		countpokedia.innerHTML = res.value;
+	})
+};
+
+const countpokeplat = document.getElementById('pokeplat-display');
+
+displayVisitCountpokeplat();
+
+function displayVisitCountpokeplat() {
+	fetch('https://api.countapi.xyz/get/pokeplat/emugalaxy')
+	.then(res => res.json())
+	.then(res => {
+		countpokeplat.innerHTML = res.value;
 	})
 };
 

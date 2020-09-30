@@ -433,6 +433,11 @@ $(document).ready(function() {
             "url": "genesis/118-mortal-kombat-2-unlimited.html",
             "sys": "SEGA"
         }, {
+            "name": "Mortal Kombat 4",
+            "image": "n64/mk4.png",
+            "url": "n64/142-mortal-kombat-4.html",
+            "sys": "N64"
+        }, {
             "name": "NBA Jam - Tournament Edition",
             "image": "gen/nbajamte.png",
             "url": "genesis/119-nba-jam-tournament-edition.html",
@@ -462,6 +467,16 @@ $(document).ready(function() {
             "image": "gen/nhlpa93.png",
             "url": "genesis/123-nhlpa-hockey-93.html",
             "sys": "SEGA"
+        }, {
+            "name": "New Super Mario Bros",
+            "image": "nds/nsmb.png",
+            "url": "nds/144-new-super-mario-bros.html",
+            "sys": "NDS"
+        }, {
+            "name": "Pokemon Diamond Version",
+            "image": "nds/pokedia.png",
+            "url": "nds/146-pokemon-diamond.html",
+            "sys": "NDS"
         }, {
             "name": "Pokemon Emerald",
             "image": "gba/pokemon-emerald.png",
@@ -493,6 +508,11 @@ $(document).ready(function() {
             "url": "gba/74-pokemon-liquid-crystal-hack.html",
             "sys": "GBA"
         }, {
+            "name": "Pokemon Platinum Version",
+            "image": "nds/pokeplat.png",
+            "url": "nds/145-pokemon-platinum.html",
+            "sys": "NDS"
+        }, {
             "name": "Pokemon Ruby",
             "image": "gba/pokemon-ruby.png",
             "url": "gba/75-pokemon-ruby.html",
@@ -507,6 +527,11 @@ $(document).ready(function() {
             "image": "gba/pokemon-x-y.png",
             "url": "gba/77-pokemon-x-&-y.html",
             "sys": "GBA"
+        }, {
+            "name": "Rayman 2: The Great Escape",
+            "image": "n64/ray2.png",
+            "url": "n64/143-rayman-2-the-great-escape.html",
+            "sys": "N64"
         }, {
             "name": "Samurai Shodown",
             "image": "gen/Samurai Shodown.png",
@@ -533,6 +558,11 @@ $(document).ready(function() {
             "url": "gba/80-sonic-advance-3.html",
             "sys": "GBA"
         }, {
+            "name": "Sonic Legacy by Gamma V",
+            "image": "gen/soniclegacy.png",
+            "url": "genesis/141-sonic-legacy.html",
+            "sys": "SEGA"
+        }, {
             "name": "Sonic Megamix Hack by Stealth",
             "image": "gen/megamixhack.png",
             "url": "genesis/128-sonic-the-hedgehog-mega-mix.html",
@@ -556,6 +586,11 @@ $(document).ready(function() {
             "name": "Sonic the Hedgehog 3 & Knuckles",
             "image": "gen/sonic3k.png",
             "url": "genesis/130-sonic-the-hedgehog-3-&-knuckles.html",
+            "sys": "SEGA"
+        }, {
+            "name": "Sonic the Hedgehog - Classic Heroes by ColinC10",
+            "image": "gen/classicheroes.png",
+            "url": "genesis/140-sonic-the-hedgehog-classic-heroes.html",
             "sys": "SEGA"
         }, {
             "name": "Street Fighter 2: Turbo",
@@ -695,7 +730,7 @@ $(document).ready(function() {
         }];
         $.each(game_data, function(key, value) {
             if (value.name.search(expression) != -1) {
-                $('#result').append('<li><a href="http://emugalaxy.herokuapp.com/' + value.url + '" class="list-group-item"><img src="https://cdn.jsdelivr.net/gh/emugalaxy-storage1/emugalaxy-storage1.github.io/thumbs/'+ value.image +'" data-loaded="true" style="width:40%;"><div class="list-group-text"> ' + value.name + '</div><span class="emu-sys">' + value.sys + '</span></a></li>');
+                $('#result').append('<li><a href="https://emugalaxy.dev/s/' + value.url + '" class="list-group-item"><img src="https://cdn.jsdelivr.net/gh/emugalaxy-storage1/emugalaxy-storage1.github.io/thumbs/'+ value.image +'" data-loaded="true" style="width:40%;"><div class="list-group-text"> ' + value.name + '</div><span class="emu-sys">' + value.sys + '</span></a></li>');
             }
         });
     });
